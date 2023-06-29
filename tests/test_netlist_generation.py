@@ -11,6 +11,7 @@ from kle2netlist.skidl import build_circuit, generate_netlist
 REFERENCE_TEMPLATE_DICT = {
     "ai03-2725/MX_Alps_Hybrid": {
         "MX": {"switch_footprint_1u": "MX_Only:MXOnly-1U-NoLED"},
+        "MX Hotswap": {"switch_footprint_1u": "MX_Only:MXOnly-1U-Hotswap"},
         "Alps": {"switch_footprint_1u": "Alps_Only:ALPS-1U"},
         "MX/Alps Hybrid": {"switch_footprint_1u": "MX_Alps_Hybrid:MX-1U-NoLED"},
     },
@@ -19,6 +20,9 @@ REFERENCE_TEMPLATE_DICT = {
             "switch_footprint_1u": "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u",
             "switch_footprint_iso_enter": "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_ISOEnter",
             "stabilizer_footprint_2u": "Mounting_Keyboard_Stabilizer:Stabilizer_Cherry_MX_2u",
+        },
+        "MX Hotswap": {
+            "switch_footprint_1u": "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
         },
         "Alps": {
             "switch_footprint_1u": "Switch_Keyboard_Alps_Matias:SW_Alps_Matias_1.00u"
@@ -50,6 +54,7 @@ def assert_netlist(netlist_template, result_file, template_dict):
     ("layout_id", "switch_library", "switch_footprint", "controller_circuit"),
     [
         ("2x2", "ai03-2725/MX_Alps_Hybrid", "MX", False),
+        ("2x2", "ai03-2725/MX_Alps_Hybrid", "MX Hotswap", False),
         ("2x2", "ai03-2725/MX_Alps_Hybrid", "Alps", False),
         ("2x2", "ai03-2725/MX_Alps_Hybrid", "MX/Alps Hybrid", False),
         ("2x2", "perigoso/keyswitch-kicad-library", "MX", False),
