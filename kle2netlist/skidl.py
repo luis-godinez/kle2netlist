@@ -56,6 +56,11 @@ SUPPORTED_LIBRARIES = {
                 "footprint-nameformat": "SW_Cherry_MX_PCB_{:.2f}u",
                 "iso-enter": "SW_Cherry_MX_PCB_ISOEnter",
             },
+            "MX Hotswap": {
+                "name": "Switch_Keyboard_Hotswap_Kailh",
+                "footprint-nameformat": "SW_Hotswap_Kailh_MX_{:.2f}u",
+                "iso-enter": "SW_Hotswap_Kailh_MX_ISOEnter",
+            },
             "Alps": {
                 "name": "Switch_Keyboard_Alps_Matias",
                 "footprint-nameformat": "SW_Alps_Matias_{:.2f}u",
