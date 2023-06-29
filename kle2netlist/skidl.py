@@ -14,6 +14,11 @@ SUPPORTED_LIBRARIES = {
                 "footprint-nameformat": "MXOnly-{:g}U-NoLED",
                 "iso-enter": "MXOnly-ISO",
             },
+            "MX Hotswap": {
+                "name": "MX_Only",
+                "footprint-nameformat": "MX-{:g}U-Hotswap",
+                "iso-enter": "MX-ISO-Hotswap",
+            },
             "Alps": {
                 "name": "Alps_Only",
                 "footprint-nameformat": "ALPS-{:g}U",
